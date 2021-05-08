@@ -4,9 +4,10 @@ import {Row, Col} from 'react-flexbox-grid';
 import OrderSummary from '../OrderSummary/OrderSummary';
 import pricing from '../../../data/pricing.json';
 import OrderOption from '../OrderOption/OrderOption';
-import { setOrderOption } from '../../../redux/orderRedux';
+//import { setOrderOption } from '../../../redux/orderRedux';
 
-const OrderForm = ({ tripCost, options}) => (
+// eslint-disable-next-line react/prop-types
+const OrderForm = ({tripCost, options, setOrderOption}) => (
 
   <Row>
     {pricing.map(option => (

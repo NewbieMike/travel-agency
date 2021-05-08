@@ -7,7 +7,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispath) => ({
-  addOrderOption: payload => dispath(setOrderOption(payload)),
+  setOrderOption: payload => dispath(setOrderOption(payload)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(OrderForm);
