@@ -9,6 +9,7 @@
 }
 
 .input, .dropdown {
+  cursor: pointer;
   width: 80%;
   border: 1px solid lighten($color-dark, 60%);
   padding: ($base-size / 2);
@@ -24,6 +25,7 @@
 
   i {
     padding-right: ($base-size / 2);
+    cursor: pointer;
   }
 
   &Active {

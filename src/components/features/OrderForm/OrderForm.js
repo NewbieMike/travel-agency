@@ -6,7 +6,7 @@ import pricing from '../../../data/pricing.json';
 import OrderOption from '../OrderOption/OrderOption';
 //import { setOrderOption } from '../../../redux/orderRedux';
 
-// eslint-disable-next-line react/prop-types
+
 const OrderForm = ({tripCost, options, setOrderOption}) => (
 
   <Row>
@@ -23,8 +23,8 @@ const OrderForm = ({tripCost, options, setOrderOption}) => (
 
 OrderForm.propTypes = {
   tripCost: PropTypes.string,
-  options: PropTypes.node,
-
+  options: PropTypes.any,
+  setOrderOption: PropTypes.func,
 };
 
 export default OrderForm;
