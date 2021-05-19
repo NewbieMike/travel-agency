@@ -41,6 +41,5 @@ describe('Component TripSummary', () => {
     const renderedTagTwo = component.find('.tags span').at(1).text();
     const renderedTagThree = component.find('.tags span').at(2).text();
     expect([renderedTagOne, renderedTagTwo, renderedTagThree]).toEqual(expectedTags);
-    
   });
 });
