@@ -12,7 +12,6 @@ export const formatTime = value => {
       function(num) {
         let paddedNumber = zeroPad(num);
         newHour.push(paddedNumber);
-        console.log(newHour);
       }
     ); 
     return newHour.join(':');
